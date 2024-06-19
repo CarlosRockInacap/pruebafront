@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PruebaFrontEndCarlosR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .plan-header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .plan-column {
+            border: 1px solid #dee2e6;
+            padding: 20px;
+            text-align: center;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .product-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+        }
+        .product-list li {
+            display: flex;
+            justify-content: space-between;
+        }
+        .included {
+            color: green;
+        }
+        .not-included {
+            color: red;
+        }
+        .ticket-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .ticket-column ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="image/inacap logo.png" alt="Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row justify-content-center plan-header">
+            <div class="col-md-3 plan-column">
+                <h3>Básico</h3>
+                <p>$100.000/mes</p>
+            </div>
+            <div class="col-md-3 plan-column">
+                <h3>Premium</h3>
+                <p>$300.000/mes</p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-3">
+                <ul class="product-list">
+                    <li>
+                        <span>Clases presenciales</span>
+                    </li>
+                    <li>
+                        <span>Ambiente de aprendizaje</span>
+                    </li>
+                    <li>
+                        <span>Clases online</span>
+                    </li>
+                    <li>
+                        <span>Plataforma Teams</span>
+                    </li>
+                    <li>
+                        <span>Clases extraprogramaticas</span>
+                    </li>
+                    <li>
+                        <span>Reforzamiento</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 ticket-column">
+                <ul class="product-list">
+                    <li class="included">&#10003;</li>
+                    <li class="included">&#10003;</li>
+                    <li class="not-included">&#10007;</li>
+                    <li class="not-included">&#10007;</li>
+                    <li class="not-included">&#10007;</li>
+                    <li class="not-included">&#10007;</li>
+                </ul>
+            </div>
+            <div class="col-md-3 ticket-column">
+                <ul class="product-list">
+                    <li class="included">&#10003;</li>
+                    <li class="included">&#10003;</li>
+                    <li class="included">&#10003;</li>
+                    <li class="included">&#10003;</li>
+                    <li class="included">&#10003;</li>
+                    <li class="included">&#10003;</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Enlaces de Interés</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://web.whatsapp.com" class="text-light">Whatsapp Web</a></li>
+                        <li><a href="https://www.google.com" class="text-light">Google</a></li>
+                        <li><a href="https://www.youtube.com" class="text-light">Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Enlaces INACAP</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://portales.inacap.cl/" class="text-light">Principal</a></li>
+                        <li><a href="https://portales.inacap.cl/sobre-nosotros/universidad/index" class="text-light">Nosotros</a></li>
+                        <li><a href="https://portales.inacap.cl/educacion-continua/index?gad_source=1&gclid=Cj0KCQjwsaqzBhDdARIsAK2gqncjAGPB-Wbey91GqMXafq2vzxpheqjwU84t1VyrhQv7Gm_3CiFX-GUaAkZkEALw_wcB" class="text-light">Cursos Online</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
